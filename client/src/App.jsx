@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import axios from 'axios'
+import ApiDataFetcher from './Components/MedicalConditionSearch'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -49,6 +50,10 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <div>
+      <h1>Exemplo de Fetch de API</h1>
+        <ApiDataFetcher />
+      </div>
     </>
   )
 }
