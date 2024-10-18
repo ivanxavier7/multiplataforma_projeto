@@ -40,3 +40,22 @@
 .read-the-docs {
   color: #888;
 }
+
+.card {
+  display: flex;
+  margin: auto;
+  width: 80%;
+  border: 2px solid #386e9e;
+  padding: 10px;
+  border-radius: 10px;
+  background: #2a344e;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card:hover {
+  display: block;
+  border-color: aquamarine;
+  transform: scale(1.1);
+  background: #384360;
+  box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 20px;
+}

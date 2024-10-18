@@ -11,3 +11,6 @@ Currently, two official plugins are available:
 Notas:
 
 npm run dev
+
+
+Dar deploy á base de dados, para ser mais fácil da partilhar no futuro.

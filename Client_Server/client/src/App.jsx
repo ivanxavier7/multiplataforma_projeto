@@ -4,16 +4,22 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import axios from 'axios'
 import ApiDataFetcher from './Components/MedicalConditionSearch'
+import ParticlesBackground from './Components/ParticlesBackground'
 
 function App() {
   const [count, setCount] = useState(0)
   const [data, setData] = useState([])
+  const [card, setCard] = useState([])
 
   const fetchApi = async () => {
     const response = await axios.get('http://localhost:8080/api')
     // const data = await response.json()
     setData(response.data.teste)
     console.log(response.data.teste)
+  }
+
+  const alertFunction = () => {
+    alert("Teste")
   }
 
   useEffect(() => {
@@ -31,7 +37,10 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <div className="card">
+      <div
+        className="card"
+        onClick={alertFunction}
+      >
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
